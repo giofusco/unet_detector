@@ -7,15 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F40D694234F9FD700423F6F /* ExitSign_wicab.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 3F40D693234F9FD700423F6F /* ExitSign_wicab.mlmodel */; };
+		3F40D69A2351089D00423F6F /* ExitSign_augmented.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 3F40D6992351089D00423F6F /* ExitSign_augmented.mlmodel */; };
 		3FA2335C234D51B100E3BA0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA2335B234D51B100E3BA0D /* AppDelegate.swift */; };
 		3FA2335E234D51B100E3BA0D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA2335D234D51B100E3BA0D /* SceneDelegate.swift */; };
 		3FA23360234D51B100E3BA0D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA2335F234D51B100E3BA0D /* ViewController.swift */; };
 		3FA23363234D51B100E3BA0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FA23361234D51B100E3BA0D /* Main.storyboard */; };
 		3FA23365234D51B300E3BA0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FA23364234D51B300E3BA0D /* Assets.xcassets */; };
 		3FA23368234D51B300E3BA0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FA23366234D51B300E3BA0D /* LaunchScreen.storyboard */; };
+		3FA23372234D51F100E3BA0D /* Detector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA23371234D51F100E3BA0D /* Detector.swift */; };
+		3FA23375234D579B00E3BA0D /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA23373234D557500E3BA0D /* CameraController.swift */; };
+		3FA23377234D58DE00E3BA0D /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA23376234D58DE00E3BA0D /* Utils.swift */; };
+		3FA23379234D5A2C00E3BA0D /* ExitSign.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 3FA23378234D5A2C00E3BA0D /* ExitSign.mlmodel */; };
+		3FA2337B234D632800E3BA0D /* ExitSign_scratch.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 3FA2337A234D632800E3BA0D /* ExitSign_scratch.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F40D693234F9FD700423F6F /* ExitSign_wicab.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ExitSign_wicab.mlmodel; sourceTree = "<group>"; };
+		3F40D6992351089D00423F6F /* ExitSign_augmented.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ExitSign_augmented.mlmodel; sourceTree = "<group>"; };
 		3FA23358234D51B100E3BA0D /* Unet_Detector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Unet_Detector.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FA2335B234D51B100E3BA0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FA2335D234D51B100E3BA0D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +33,11 @@
 		3FA23364234D51B300E3BA0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FA23367234D51B300E3BA0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3FA23369234D51B300E3BA0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FA23371234D51F100E3BA0D /* Detector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detector.swift; sourceTree = "<group>"; };
+		3FA23373234D557500E3BA0D /* CameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
+		3FA23376234D58DE00E3BA0D /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		3FA23378234D5A2C00E3BA0D /* ExitSign.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ExitSign.mlmodel; sourceTree = "<group>"; };
+		3FA2337A234D632800E3BA0D /* ExitSign_scratch.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ExitSign_scratch.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +70,38 @@
 		3FA2335A234D51B100E3BA0D /* Unet_Detector */ = {
 			isa = PBXGroup;
 			children = (
+				3FA2336F234D51C300E3BA0D /* Resources */,
 				3FA2335B234D51B100E3BA0D /* AppDelegate.swift */,
+				3FA23373234D557500E3BA0D /* CameraController.swift */,
 				3FA2335D234D51B100E3BA0D /* SceneDelegate.swift */,
 				3FA2335F234D51B100E3BA0D /* ViewController.swift */,
 				3FA23361234D51B100E3BA0D /* Main.storyboard */,
 				3FA23364234D51B300E3BA0D /* Assets.xcassets */,
 				3FA23366234D51B300E3BA0D /* LaunchScreen.storyboard */,
 				3FA23369234D51B300E3BA0D /* Info.plist */,
+				3FA23371234D51F100E3BA0D /* Detector.swift */,
+				3FA23376234D58DE00E3BA0D /* Utils.swift */,
 			);
 			path = Unet_Detector;
+			sourceTree = "<group>";
+		};
+		3FA2336F234D51C300E3BA0D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3FA23370234D51D300E3BA0D /* CoreML */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3FA23370234D51D300E3BA0D /* CoreML */ = {
+			isa = PBXGroup;
+			children = (
+				3F40D6992351089D00423F6F /* ExitSign_augmented.mlmodel */,
+				3F40D693234F9FD700423F6F /* ExitSign_wicab.mlmodel */,
+				3FA2337A234D632800E3BA0D /* ExitSign_scratch.mlmodel */,
+				3FA23378234D5A2C00E3BA0D /* ExitSign.mlmodel */,
+			);
+			path = CoreML;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +175,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FA23375234D579B00E3BA0D /* CameraController.swift in Sources */,
 				3FA23360234D51B100E3BA0D /* ViewController.swift in Sources */,
+				3F40D69A2351089D00423F6F /* ExitSign_augmented.mlmodel in Sources */,
+				3FA2337B234D632800E3BA0D /* ExitSign_scratch.mlmodel in Sources */,
 				3FA2335C234D51B100E3BA0D /* AppDelegate.swift in Sources */,
+				3F40D694234F9FD700423F6F /* ExitSign_wicab.mlmodel in Sources */,
+				3FA23379234D5A2C00E3BA0D /* ExitSign.mlmodel in Sources */,
 				3FA2335E234D51B100E3BA0D /* SceneDelegate.swift in Sources */,
+				3FA23372234D51F100E3BA0D /* Detector.swift in Sources */,
+				3FA23377234D58DE00E3BA0D /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +331,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E9BKVZ8679;
 				INFOPLIST_FILE = Unet_Detector/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,6 +350,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E9BKVZ8679;
 				INFOPLIST_FILE = Unet_Detector/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
